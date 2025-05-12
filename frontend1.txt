@@ -1,0 +1,254 @@
+HTML5
+======
+HTML stands for Hypertext Markup language.
+
+It is widely used language on web to develop web pages and web applications.
+
+It is developed by Burner's Lee in late 1991.
+
+It is a tag based language.
+
+It is a case insensitive language.
+
+HTML tag contains opening tag and closing tag.
+ex:
+	<html>  - opening tag 
+
+	</html> - closing tag 
+
+All HTML documents execute in browser window.
+
+ex:
+	Chrome
+	Mozilla
+	Edge
+	Opera
+	and etc.
+
+All HTML documents we need to save with .html or .htm extension.
+
+HTML is used to develop client side components.
+
+HTML2.0 specification was released in the year of 1995.
+
+HTML4.0 specification was released in the year of 1999.
+
+HTML5 which is a extension of HTML4 was released in the year of 2005.
+
+The main objective of HTML5 is used to develop leight weight components.
+
+HTML5 is also known as Advanced Hypertext Markup Language.
+
+HTML skeleton 
+==============
+<!DOCTYPE html>
+<html>
+	<head>
+		- // Head related tags 
+	</head>
+	<body>
+		- // Body related tags 
+	</body>
+</html>
+
+<!DOCTYPE html>
+---------------
+	It is used to represent HTML5 document.
+
+
+<html>
+------
+	It is a root tag for entire HTML document.
+	It contains two child tags.
+	1) head tag 
+	2) body tag 
+
+<head> tag 
+----------
+	A <head> tag is used to declare following things.
+	ex:
+		1) Title of a page 
+		2) Favourite Icon 
+		3) Metadata
+		4) styles 
+		5) scripts
+
+<body> tag 
+-----------
+	a <body> tag contains actual content of a web page.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+
+	</head>
+	<body>
+		This is HTML Example	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IHUBTALENT</title>
+	</head>
+	<body>
+		This is HTML Example	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IHUBTALENT</title>
+	
+		<link rel="icon" href="qt.png">
+	</head>
+	<body>
+		This is HTML Example	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- page title -->
+		<title>IHUBTALENT</title>
+	
+		<!-- favicon -->
+		<link rel="icon" href="qt.png">
+	</head>
+	<body>
+		<!-- simple text -->
+		This is HTML Example	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- page title -->
+		<title>IHUBTALENT</title>
+	
+		<!-- favicon -->
+		<link rel="icon" href="qt.png">
+	</head>
+	<body bgcolor="cyan">
+		<!-- simple text -->
+		This is HTML Example	
+	</body>
+</html>
+
+
+HTML Metadata
+=============
+A <meta> tag is used to declare metadata of a document.
+
+A metadata used by browser window, search engine and other web services.
+
+To declare a metadata in a html we will use <meta> tag.
+
+A <meta> tag must declare inside the <head> tag.
+
+Using <meta> tag we can declare following things.
+
+1) Description 
+2) Author 
+3) Keywords
+4) copyright
+5) Refresh  
+6) view port
+and etc.
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- page title -->
+		<title>IHUBTALENT</title>
+	
+		<!-- favicon -->
+		<link rel="icon" href="qt.png">
+
+		<!-- metadata -->
+		<meta charset="utf-8" />
+		<meta name="description" content="It is a training web page">
+		<meta name="author" content="Niyaz sir">
+		<meta name="keywords" content="Best Trainer for Java">
+		<meta name="copyright" content="Copyright by niyaz sir">
+		<meta http-equiv="refresh" content="05">
+    		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+	</head>
+	<body bgcolor="cyan">
+		<!-- simple text -->
+		This is HTML Example document	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

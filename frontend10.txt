@@ -1,0 +1,939 @@
+CSS Design
+==========
+
+Task2
+|
+|------css 
+|	|
+	|---mystyles.css
+
+|------images
+	|
+	|---rock.jpg 
+
+|------index.html 
+|
+
+index.html 
+-----------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- add external css -->
+		<link rel="stylesheet" type="text/css" href="css/mystyles.css">
+	</head>
+	<body>
+			<div class="container">
+					<div class="box1">
+						<img src="images/rock.jpg"/>
+					</div>
+					<div class="box2">
+						<h3>Dwayne Johnson</h3>
+						<p>
+							
+							Dwayne Douglas Johnson (born May 2, 1972), also known by his ring name the Rock, is an American actor and professional wrestler. He is signed to WWE, where he performs on a part-time basis. Widely regarded as one of the greatest professional wrestlers of all time,[6][7] Johnson was integral to the development and success of the World Wrestling Federation (WWF, now WWE) during the Attitude Era. He wrestled for the WWF full-time for eight years before pursuing an acting career. His films have grossed over $3.5 billion in North America and over $12.5 billion worldwide,[8] making him one of the world's highest-grossing and highest-paid actors.
+
+						</p>
+					</div>
+			</div>
+	</body>	
+</html>
+
+
+mystyles.css
+-------------
+*
+{
+	margin:0;
+	padding:0;
+}
+
+.container
+{
+	width:800px;
+	height:400px;
+	background-color: cyan;
+	margin:100px auto;
+}
+
+.container .box1
+{
+	width:400px;
+	height:400px;
+	background-color: lightgray;
+	float:left;
+}
+
+.container .box1 img
+{
+	width:100%;
+	height:100%;
+}
+
+.container .box2
+{
+	width:400px;
+	height:400px;
+	background-color: orange;
+	float:right;
+}
+
+.container .box2 h3
+{
+	text-align: center;
+	padding:30px 0;
+}
+
+.container .box2 p
+{
+	padding:20px;
+	text-align: justify;
+	font-size:17px;
+}
+
+
+CSS clear property
+===================
+The clear property specifies on which side of an element floating elements are not allowed to float.
+
+value		Description
+-------		----------------
+none		Default allows floating elements to both the side.
+
+left		No floating elements allowed on the left side.
+
+right 		No floating elements allowed on the right side.
+
+both		No floating elements allowed on the both side.h 
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		#box1
+		{
+			width:200px;
+			height:200px;
+			background-color:red;
+			float:left;
+		}
+		#box2
+		{
+			width:200px;
+			height:200px;
+			background-color:blue;
+			float:right;	
+		}
+		#box3
+		{
+			width:100%;
+			height:200px;
+			background-color: green;
+			clear:none;
+		}
+	</style>
+</head>
+<body>
+	   <div id="box1"></div>
+	   <div id="box2"></div>
+	   <div id="box3"></div>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		#box1
+		{
+			width:200px;
+			height:200px;
+			background-color:red;
+			float:left;
+		}
+		#box2
+		{
+			width:200px;
+			height:200px;
+			background-color:blue;
+			float:right;	
+		}
+		#box3
+		{
+			width:100%;
+			height:200px;
+			background-color: green;
+			clear:both;
+		}
+	</style>
+</head>
+<body>
+	   <div id="box1"></div>
+	   <div id="box2"></div>
+	   <div id="box3"></div>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		#box1
+		{
+			width:200px;
+			height:300px;
+			background-color:red;
+			float:left;
+		}
+		#box2
+		{
+			width:200px;
+			height:200px;
+			background-color:blue;
+			float:right;	
+		}
+		#box3
+		{
+			width:100%;
+			height:200px;
+			background-color: green;
+			clear:left;
+		}
+	</style>
+</head>
+<body>
+	   <div id="box1"></div>
+	   <div id="box2"></div>
+	   <div id="box3"></div>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		#box1
+		{
+			width:200px;
+			height:300px;
+			background-color:red;
+			float:left;
+		}
+		#box2
+		{
+			width:200px;
+			height:200px;
+			background-color:blue;
+			float:right;	
+		}
+		#box3
+		{
+			width:100%;
+			height:200px;
+			background-color: green;
+			clear:right;
+		}
+	</style>
+</head>
+<body>
+	   <div id="box1"></div>
+	   <div id="box2"></div>
+	   <div id="box3"></div>	
+</body>
+</html>
+
+CSS List 
+========
+In HTML, there are two types of lists which are widely used.
+
+1)Order list (<ol>)
+------------------------
+	The list items are marked with numbers and letters.
+
+
+2)Unorder list (<ul>)
+------------------------------
+	The list items are marked with bullets.
+
+
+The "list-style-type" property specifies the types of lits item marker.
+
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: none;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: lower-alpha;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: upper-alpha;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: lower-roman;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: upper-roman;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: square;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: circle;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-type: disc;
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		.myClass
+		{
+			list-style-image: url("images/plane.jpg");
+		}
+	</style>
+</head>
+<body>
+	   <ul class="myClass">
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		ul
+		{
+			border:2px solid black;
+			list-style-position: inside;
+		}
+		ul li
+		{
+			border:2px solid red;
+		}
+	</style>
+</head>
+<body>
+	   <ul>
+	   		<li>AngularJS</li>
+	   		<li>ReactJS</li>
+	   		<li>VueJS</li>
+	   		<li>ExpressJS</li>
+	   </ul>	
+</body>
+</html>
+
+CSS Table 
+=========
+To specify table borders in CSS, use the border property.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		table,tr,th,td
+		{
+			border :2px solid black;
+		}	
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>No</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr> 
+		<tr>
+			<td>101</td>
+			<td>Alan</td>
+			<td>alan@gmail.com</td>
+		</tr>  
+		<tr>
+			<td>102</td>
+			<td>Mark</td>
+			<td>mark@zoho.com</td>
+		</tr>  
+		<tr>
+			<td>103</td>
+			<td>Erick</td>
+			<td>erick@yahoo.com</td>
+		</tr>  
+		<tr>
+			<td>104</td>
+			<td>Nelson</td>
+			<td>nelson@outlook.com</td>
+		</tr>  	
+	</table>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		table
+		{
+			border-collapse: collapse;
+		}
+		tr,th,td
+		{
+			border :2px solid black;
+		}	
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>No</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr> 
+		<tr>
+			<td>101</td>
+			<td>Alan</td>
+			<td>alan@gmail.com</td>
+		</tr>  
+		<tr>
+			<td>102</td>
+			<td>Mark</td>
+			<td>mark@zoho.com</td>
+		</tr>  
+		<tr>
+			<td>103</td>
+			<td>Erick</td>
+			<td>erick@yahoo.com</td>
+		</tr>  
+		<tr>
+			<td>104</td>
+			<td>Nelson</td>
+			<td>nelson@outlook.com</td>
+		</tr>  	
+	</table>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		table
+		{
+			border-collapse: collapse;
+			width:50%;
+		}
+		tr,th,td
+		{
+			border :2px solid black;
+		}	
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<th>No</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr> 
+		<tr>
+			<td>101</td>
+			<td>Alan</td>
+			<td>alan@gmail.com</td>
+		</tr>  
+		<tr>
+			<td>102</td>
+			<td>Mark</td>
+			<td>mark@zoho.com</td>
+		</tr>  
+		<tr>
+			<td>103</td>
+			<td>Erick</td>
+			<td>erick@yahoo.com</td>
+		</tr>  
+		<tr>
+			<td>104</td>
+			<td>Nelson</td>
+			<td>nelson@outlook.com</td>
+		</tr>  	
+	</table>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		table
+		{
+			border-collapse: collapse;
+			width:50%;
+		}
+		tr
+		{
+			border-bottom :2px solid black;
+		}	
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<th>No</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr> 
+		<tr>
+			<td>101</td>
+			<td>Alan</td>
+			<td>alan@gmail.com</td>
+		</tr>  
+		<tr>
+			<td>102</td>
+			<td>Mark</td>
+			<td>mark@zoho.com</td>
+		</tr>  
+		<tr>
+			<td>103</td>
+			<td>Erick</td>
+			<td>erick@yahoo.com</td>
+		</tr>  
+		<tr>
+			<td>104</td>
+			<td>Nelson</td>
+			<td>nelson@outlook.com</td>
+		</tr>  	
+	</table>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		table
+		{
+			border-collapse: collapse;
+			width:50%;
+		}
+		tr,th,td
+		{
+			border:2px solid black;
+		}	
+		tr:hover
+		{
+			background-color: #00ff00;
+		}
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<th>No</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr> 
+		<tr>
+			<td>101</td>
+			<td>Alan</td>
+			<td>alan@gmail.com</td>
+		</tr>  
+		<tr>
+			<td>102</td>
+			<td>Mark</td>
+			<td>mark@zoho.com</td>
+		</tr>  
+		<tr>
+			<td>103</td>
+			<td>Erick</td>
+			<td>erick@yahoo.com</td>
+		</tr>  
+		<tr>
+			<td>104</td>
+			<td>Nelson</td>
+			<td>nelson@outlook.com</td>
+		</tr>  	
+	</table>	
+</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		table
+		{
+			border-collapse: collapse;
+			width:50%;
+		}
+		tr,th,td
+		{
+			border:2px solid black;
+		}	
+		tr:nth-child(even)
+		{
+			background-color: #C3C3C3;
+		}
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr>
+			<th>No</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr> 
+		<tr>
+			<td>101</td>
+			<td>Alan</td>
+			<td>alan@gmail.com</td>
+		</tr>  
+		<tr>
+			<td>102</td>
+			<td>Mark</td>
+			<td>mark@zoho.com</td>
+		</tr>  
+		<tr>
+			<td>103</td>
+			<td>Erick</td>
+			<td>erick@yahoo.com</td>
+		</tr>  
+		<tr>
+			<td>104</td>
+			<td>Nelson</td>
+			<td>nelson@outlook.com</td>
+		</tr>  	
+	</table>	
+</body>
+</html>
+
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+	<style>
+		table
+		{
+			border-collapse: collapse;
+			width:50%;
+		}
+		tr,th,td
+		{
+			border:2px solid black;
+		}	
+		tr:nth-child(even)
+		{
+			background-color: #C3C3C3;
+		}
+	</style>
+</head>
+<body>
+	<table align="center">
+		<tr bgcolor="#00ff00">
+			<th>No</th>
+			<th>Name</th>
+			<th>Email</th>
+		</tr> 
+		<tr>
+			<td>101</td>
+			<td>Alan</td>
+			<td>alan@gmail.com</td>
+		</tr>  
+		<tr>
+			<td>102</td>
+			<td>Mark</td>
+			<td>mark@zoho.com</td>
+		</tr>  
+		<tr>
+			<td>103</td>
+			<td>Erick</td>
+			<td>erick@yahoo.com</td>
+		</tr>  
+		<tr>
+			<td>104</td>
+			<td>Nelson</td>
+			<td>nelson@outlook.com</td>
+		</tr>  	
+	</table>	
+</body>
+</html>
+
+
+Q) How many selectors are there in CSS?
+
+We have five selectors in CSS.
+
+1) Element selector 
+	ex:
+		p
+		{
+		}
+
+2) Group selector
+	ex:
+		p,div
+		{
+		} 
+
+3) Id selector 
+	ex:
+		#id
+		{
+		}
+
+4) Class selector
+	ex:
+		.class
+		{
+		} 
+
+5) Universal selector 
+	ex:
+		*
+		{
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,496 @@
+Notepad++ Editor 
+================
+Download link : https://notepad-plus-plus.org/downloads/v8.7.7/
+
+
+HTML form using HTML Table 
+===========================
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<form action="">
+			<table align="center">
+				<tr>
+					<td>UserName:</td>
+					<td><input type="text" name="t1"/></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="t2"/></td>
+				</tr>
+				<tr>
+					<td>Gender:</td>
+					<td>
+					<input type="radio" name="t3" value="male"/> MALE
+					<input type="radio" name="t3" value="female"/> FEMALE
+					</td>
+				</tr>
+				<tr>
+					<td>country:</td>
+					<td>
+						<select name="t4">
+							<option value="">none</option>
+							<option value="ind">India</option>
+							<option value="aus">Australia</option>
+							<option value="can">Canada</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="reset" value="reset"/></td>
+					<td><input type="submit" value="submit"/></td>
+				</tr>
+				
+			</table>
+		</form>
+	</body>
+</html>
+
+
+Datalist tag 
+============
+A <datalist> element is used to specify list of predefined options for an <input> element.
+
+A <datalist> element provides autocomplete features for an <input> element.
+
+User will see a drop-down list of predefined options for <input> elements.
+
+A <datalist> tag "id" attribute name must be same as <input> tag "list" attribute name.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Country : <input type="text" name="t1" list="countries"/>
+		
+		<datalist  id="countries">
+			<option value="India">
+			<option value="Ireland">
+			<option value="Iran">
+			<option value="Australia">
+			<option value="America">	
+			<option value="UK">
+			<option value="UAE">
+		</datalist>
+	</body>
+</html>
+
+Details Tag 
+===========
+A <details> tag is used to display special content where a user can open and close on demand.
+
+A <details> tag is used to design interactive widgets where user can open and close.
+
+A <details> tag contains <summary> tag.
+
+We can keep any sort of tags inside <details> tag.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<details>
+			<summary>HTML</summary>
+			<h3>HTML is a markup language</h3>
+			<p>HTML is widely used language on web</p>
+			<div>HTML is used to develop static web pages</div>
+		</details>
+		
+	</body>
+</html>
+
+
+HTML <del> and <ins> tag 
+=========================
+A <del> element represents a range of text that has been deleted from the document.
+
+The <ins> element can be used for the opposite purpose to indicate text that has been added to the document.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		My Hero is <del>Mahesh Babu</del> <ins>Allu Arjun</ins>
+		
+	</body>
+</html>
+
+HTML <sub> tag 
+==============
+A <sub> tag defines subscript text.
+
+Subscript text appears half a character below the normal line and sometimes rendered in a smaller font.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<h1>H<sub>2</sub>O</h1>
+		
+	</body>
+</html>
+
+HTML <sup> tag 
+===============
+A <sup> tag defines superscript text.
+
+A superscript text appears half a character above the normal line and sometimes rendered in a smaller font.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<h1>a<sup>2 </sup> + b<sup>2</sup></h1>
+		
+	</body>
+</html>
+
+
+HTML bdo tag 
+=============
+BDO stands for bi-directional Override.
+
+The <bdo> tag is used to override the current text direction.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<h1>
+			<bdo dir="rtl">Hello</bdo>
+		</h1>
+		
+		<h1>
+			<bdo dir="ltr">Hello</bdo>
+		</h1>
+		
+	</body>
+</html>
+
+
+HTML <header> and  <nav> tag
+==============================
+A <header> element represents a container for introuductory content or set of navigations links.
+
+The <nav> tag defines a set of navigations links.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<header>
+			<center>
+				<nav>
+					<a href="">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="">About</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="">Service</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="">Portfolio</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				</nav>
+			</center>
+		</header>
+		
+	</body>
+</html>
+
+
+HTML <section> tag, <article> tag and <figure> tag 
+===================================================
+A <section> tag defines a section in a document.
+
+A <article> tag specifies independent, self contained content.
+
+A <figure> tag specifieds self-contained content like illustrations, diagrams , photos , code listings and etc.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<section>
+			<center>
+				<article>
+						<h1>Our Story</h1>
+						<p>Our Awesome Features Makes Your LEarning Hassle-Free</p>	
+
+						<figure>
+							<img src="images/rock.jpg" width="600px" height="200px"/>
+							<figcaption>
+								Dwayne Johnson
+							</figcaption>		
+						</figure>			
+				</article>
+			</center>
+		</section>
+		
+	</body>
+</html>
+
+HTML Footer tag 
+===============
+A <footer> tag defines a footer for a document.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<footer>
+			<center>
+				<p>Home | About | Service | Porfolio | Contact</p>
+				<p> &copy;All Right Reserved -2025</p>
+			</center>
+		</footer>
+		
+	</body>
+</html>
+
+HTML <small> tag 
+=================
+A <small> tag represent small prints like copyright and legal text.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<center>
+			<small>&copy;All Right Reserved-2025</small>
+		</center>
+		
+	</body>
+</html>
+
+HTML <big> Tag 
+==============
+A <big> tag is used to make a text one size bigger.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<p>This is html class</p>
+		
+		<p>This is <big>html</big> class</p>
+		
+	</body>
+</html>
+
+HTML <cite> tag 
+================
+A <cite> tag defines the title of a creative work i.e movie , songs , poems and etc.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		
+			Movie Name : <cite>Pushpa2</cite>
+		
+		
+	</body>
+</html>
+
+
+HTML frames
+============
+
+To use frames on a web page we need to use <frameset> tag instead of <body> tag.
+
+The <frameset> tag defines how to divide the window into frames.
+
+The "rows" attribute of <frameset> tag defines horizontal frames.
+
+The "cols" attribute of <frameset> tag defines vertical frames.
+
+Each frame is indicated by <frame> tag and it defines which document should 
+be open into that place.
+
+Note:
+----
+The <frame> tag is deprecated in HTML5 so that don't use this tag.
+
+
+ex:1
+-----
+
+index.html 
+------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<frameset cols="33%,*,33%">
+		<frame src="a.html">
+		<frame src="b.html">
+		<frame src="c.html">
+	</frameset>
+</html>
+
+a.html 
+------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A.html</title>
+	</head>
+	<body bgcolor="red">
+	
+		
+	</body>
+</html>
+
+b.html
+----- 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>B.html</title>
+	</head>
+	<body bgcolor="green">
+	
+		
+	</body>
+</html>
+
+c.html 
+------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C.html</title>
+	</head>
+	<body  bgcolor="blue">
+	
+		
+	</body>
+</html>
+
+ex:2
+----
+index.html 
+------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<frameset rows="33%,*,33%">
+		<frame src="a.html">
+		<frame src="b.html">
+		<frame src="c.html">
+	</frameset>
+</html>
+
+a.html 
+------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A.html</title>
+	</head>
+	<body bgcolor="red">
+	
+		
+	</body>
+</html>
+
+b.html
+----- 
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>B.html</title>
+	</head>
+	<body bgcolor="green">
+	
+		
+	</body>
+</html>
+
+c.html 
+------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>C.html</title>
+	</head>
+	<body  bgcolor="blue">
+	
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

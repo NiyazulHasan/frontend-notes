@@ -1,0 +1,721 @@
+CSS transform property 
+======================
+CSS transform property is used to move, scale, rotate and skew elements.
+
+CSS tranform property contains following transformation methods.
+
+ex:
+	translate()
+	scaleX()
+	scaleY()
+	scale() 
+	rotate() 
+	skewX() 
+	skewY()
+	skew() 
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				transform: translate(200px,100px);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: scaleX(2);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: scaleY(2);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: scale(2);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: rotate(60deg);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: rotate(-30deg);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: skewX(30deg);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: skewY(30deg);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin:170px auto;
+				transform: skew(30deg);
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			Welcome to Transform Property
+		</div>
+	</body>
+</html>
+
+
+CSS transition property
+=======================
+CSS transition property allows us to change property value smoothly , over a given duration.
+
+To see the effects on an element ,we need to use mouse over to the element.
+
+We have following properties in CSS transition.
+ex:
+	transition-delay
+	transition-duration
+	transition-property
+	transition-timing-function
+	or 
+
+	transition shorthand property
+
+ex:
+-----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: width,height;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: all;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: all;
+				transition-duration: 2s;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: all;
+				transition-duration: 2s;
+				transition-timing-function: linear;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: all;
+				transition-duration: 2s;
+				transition-timing-function: ease-in;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: all;
+				transition-duration: 2s;
+				transition-timing-function: ease-out;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: all;
+				transition-duration: 2s;
+				transition-timing-function: ease-in-out;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition-property: all;
+				transition-duration: 2s;
+				transition-timing-function: ease-in-out;
+				transition-delay: 4s;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color:#FF0000;
+				transition: 2s all linear 5s;
+			}
+			div:hover
+			{
+				width:400px;
+				height:400px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+</html>
+
+CSS Design1
+============
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			img
+			{
+				width:300px;
+				height:300px;
+				display:block;
+				margin:150px auto;
+				transition: 2s all linear;	
+			}
+			img:hover
+			{
+				transform:rotate(360deg);	
+			}	
+		</style>
+
+	</head>
+	<body>
+			<img src="images/pavan.jpg"/>
+	</body>
+</html>
+
+CSS Design2
+============
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			img 
+			{
+				width:300px;
+				height:300px;
+				margin:100px 70px;
+				filter: grayscale(100%);
+				transition:1s all linear;
+			}
+			img:hover
+			{
+				transform: scale(1.2);	
+				filter:grayscale(0%);
+			}
+		</style>
+
+	</head>
+	<body>
+			<img src="images/girl1.jpg"/>
+			<img src="images/girl2.jpg"/>
+			<img src="images/girl3.jpg"/>
+	</body>
+</html>
+
+
+CSS opacity property
+======================
+The opacity property sets the opacity level for an element.
+
+The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.
+ 
+
+ex:
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color: red;
+				box-sizing: border-box;
+				opacity: 1;
+			}
+		</style>
+
+	</head>
+	<body>
+			<div></div>
+	</body>
+</html>
+
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color: red;
+				box-sizing: border-box;
+				opacity: 0.5;
+			}
+		</style>
+
+	</head>
+	<body>
+			<div></div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- internal css -->
+		<style>
+			div
+			{
+				width:200px;
+				height:200px;
+				background-color: red;
+				box-sizing: border-box;
+				opacity: 0.1;
+			}
+		</style>
+
+	</head>
+	<body>
+			<div></div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

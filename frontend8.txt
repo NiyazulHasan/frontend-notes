@@ -1,0 +1,1110 @@
+CSS background-blend-mode 
+==========================
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+		body
+		{
+			background-color:#FFFFFF , #FFFFFF;
+			background-image:url("images/bg.jfif"), url("images/micky.png");
+			background-repeat:no-repeat, no-repeat;
+			background-size:cover, 500px;
+			background-position: center 0px, right 0px; 
+			background-attachment:fixed, fixed;
+			background-blend-mode:lighten;
+		} 
+		
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+		body
+		{
+			background-color:#FFFFFF , #FFFFFF;
+			background-image:url("images/bg.jfif"), url("images/micky.png");
+			background-repeat:no-repeat, no-repeat;
+			background-size:cover, 500px;
+			background-position: center 0px, right 80px; 
+			background-attachment:fixed, fixed;
+			background-blend-mode:darken;
+		} 
+		
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+
+
+
+CSS border property 
+====================
+The CSS border property allows us to specify the style, width and color of an element's border.
+
+We have following list of CSS border property.
+
+ex:
+	border-style 
+	border-width 
+	border-color 
+	border shorthand 
+
+border-style 
+-------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+		h1{ border-style:solid;}
+		h2{ border-style:dotted;}
+		h3{ border-style:dashed;}
+		h4{ border-style:double;}
+		h5{ border-style:groove;}
+		h6{ border-style:inset;}
+		p{ border-style:outset;}
+		</style>
+	</head>
+	<body>
+		<h1>Heading Tag1</h1>
+		<h2>Heading Tag2</h2>
+		<h3>Heading Tag3</h3>
+		<h4>Heading Tag4</h4>
+		<h5>Heading Tag5</h5>
+		<h6>Heading Tag6</h6>
+		<p>Paragraph Tag</p>
+	</body>
+</html>
+
+border-width
+-------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+		h1{ 
+			border-style:solid;
+			border-width:5px;
+		}
+		h2{ 
+			border-style:dotted;
+			border-width:5px;
+		}
+		h3{ 
+			border-style:dashed;
+			border-width:5px;
+		}
+		h4{ 
+			border-style:double;
+			border-width:5px;	
+		}
+		h5{ 
+			border-style:groove;
+			border-width:5px;	
+		}
+		h6{ 
+			border-style:inset;
+			border-width:5px;	
+		}
+		p{ 
+			border-style:outset;
+			border-width:5px;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Heading Tag1</h1>
+		<h2>Heading Tag2</h2>
+		<h3>Heading Tag3</h3>
+		<h4>Heading Tag4</h4>
+		<h5>Heading Tag5</h5>
+		<h6>Heading Tag6</h6>
+		<p>Paragraph Tag</p>
+	</body>
+</html>
+
+border-color
+------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+		h1{ 
+			border-style:solid;
+			border-width:5px;
+			border-color:#FFC312;
+		}
+		h2{ 
+			border-style:dotted;
+			border-width:5px;
+			border-color:#C4E538;
+		}
+		h3{ 
+			border-style:dashed;
+			border-width:5px;
+			border-color:#12CBC4;
+		}
+		h4{ 
+			border-style:double;
+			border-width:5px;
+			border-color:#0652DD;		
+		}
+		h5{ 
+			border-style:groove;
+			border-width:5px;
+			border-color:#ED4C67;	
+		}
+		h6{ 
+			border-style:inset;
+			border-width:5px;	
+			border-color:#009432;	
+		}
+		p{ 
+			border-style:outset;
+			border-width:5px;
+			border-color:#6F1E51;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Heading Tag1</h1>
+		<h2>Heading Tag2</h2>
+		<h3>Heading Tag3</h3>
+		<h4>Heading Tag4</h4>
+		<h5>Heading Tag5</h5>
+		<h6>Heading Tag6</h6>
+		<p>Paragraph Tag</p>
+	</body>
+</html>
+
+
+border shorthand property 
+-------------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+		h1{ 
+			border:5px solid #FFC312;
+		}
+		h2{ 
+			border:5px dotted #C4E538;
+		}
+		h3{ 
+			border: 5px dashed #12CBC4;
+		}
+		h4{ 
+			border: 5px double #0652DD;	
+		}
+		h5{ 
+			border: 5px groove #ED4C67;
+		}
+		h6{ 
+			border: 5px inset #009432;
+
+		}
+		p{ 
+			border: 5px outset #6F1E51;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Heading Tag1</h1>
+		<h2>Heading Tag2</h2>
+		<h3>Heading Tag3</h3>
+		<h4>Heading Tag4</h4>
+		<h5>Heading Tag5</h5>
+		<h6>Heading Tag6</h6>
+		<p>Paragraph Tag</p>
+	</body>
+</html>
+
+
+CSS Margin property 
+===================
+CSS margin proeprty is used to create space around the elements, outside the defined border.
+
+CSS contains following properties to specify the margins for each side of an element.
+
+ex:
+	1) margin-top 
+	2) mragin-right 
+	3) margin-bottom 
+	4) margin-left 
+	5) margin shorthand 
+
+All the above margin properties can have following values. They are
+
+1) auto 		: The browser calculate the margin 
+			
+2) length 		: It declare margin in px,pt,cm,em and etc.
+
+3) %			: It declare margin in percentage.
+
+4) inherit 		: It takes the margin from parent element. 
+
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				border:2px solid black;
+				margin-top:100px;
+				margin-right:100px;
+				margin-bottom:100px;
+				margin-left:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Heading Tag1</h1>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				border:2px solid black;
+				margin-top:5%;
+				margin-right:10%;
+				margin-bottom:15%;
+				margin-left:20%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Heading Tag1</h1>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			div
+			{
+				border:2px solid black;
+				margin-top:100px;
+			}
+			h1
+			{
+				border:2px solid red;
+				margin-top:inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Heading Tag</h1>
+		</div>
+	</body>
+</html>
+
+
+If margin contains four values.
+ex:
+	margin: 25px 50px 75px 100px;
+
+		top  right bottom left
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			h1
+			{
+				border:2px solid black;
+				margin: 25px 50px 75px 100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+If margin contains three values.
+ex:
+	margin : 25px 50px 75px;
+
+		 top left&right bottom 
+
+ex:
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			h1
+			{
+				border:2px solid black;
+				margin: 25px 50px 75px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+If margin contains two values.
+
+ex:
+	margin : 50px 100px;
+		 top and bottom , left and right 
+
+ex:
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			h1
+			{
+				border:2px solid black;
+				margin: 50px 100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>	
+
+If margin contains only one value.
+ex:
+	margin: 50px;
+
+		all side 50px
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			h1
+			{
+				border:2px solid black;
+				margin: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+
+CSS Padding property 
+=====================
+The CSS padding property is used to generate space around the elements content.
+
+We have following of CSS properties for specify padding for each side.
+
+ex:
+	1) padding-top 
+	2) padding-right 
+	3) padding-bottom 
+	4) padding-left 
+	5) padding shorthand 
+
+All the above padding properties can have following values. They are
+
+1) auto 		: The browser calculate the padding 
+			
+2) length 		: It declare padding in px,pt,cm,em and etc.
+
+3) %			: It declare padding in percentage.
+
+4) inherit 		: It takes the padding from parent element. 
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			h1
+			{
+				border:2px solid black;
+				padding-top:100px;
+				padding-right:100px;
+				padding-bottom:100px;
+				padding-left:100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			h1
+			{
+				border:2px solid black;
+				padding-top:5%;
+				padding-right:10%;
+				padding-bottom:15%;
+				padding-left:20%;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			div
+			{
+				border:2px solid red;
+				padding-top:100px;
+			}
+			h1
+			{
+				border:2px solid black;
+				padding-top:inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Heading Tag</h1>
+		</div>
+	</body>
+</html>
+
+If padding contains four values.
+ex:
+	padding: 25px 50px 75px 100px;
+
+		 top  right bottom left 
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				border:2px solid black;
+				padding: 25px 50px 75px 100px;
+
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+If padding contains three values.
+ex:
+	padding: 25px 50px 100px;
+
+		top  left&right bottom 
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				border:2px solid black;
+				padding: 25px 50px 100px;
+
+
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+
+If padding contains two values.
+ex:
+	padding: 50px 100px;
+
+		top&bottom, left&right
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				border:2px solid black;
+				padding: 50px 100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+If padding contains one value.
+ex:
+	padding: 100px;
+
+		all sides are 100px
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				border:2px solid black;
+				padding: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<h1>Heading Tag</h1>
+		
+	</body>
+</html>
+
+
+
+
+CSS width and height property 
+===============================
+The "height" and "width" property is used to set the height and width of an element.
+
+This property will not include margin, border and padding.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			div
+			{
+				border:2px solid black;
+				height:200px;
+				width:200px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<div></div>
+		
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			div
+			{
+				border:2px solid black;
+				min-height:200px;
+				max-width:300px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<div></div>
+		
+	</body>
+</html>
+
+
+
+CSS Text property 
+==================
+We have following list of CSS text properties.
+
+ex:
+
+color 
+---------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+background-color 
+------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+text-align 
+-----------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+text-transform 
+----------------
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:lowercase;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:capitalize;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+
+text-decoration 
+---------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:none;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+
+letter-spacing 
+--------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+				letter-spacing:5px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+font-size 
+-----------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+				letter-spacing:5px;
+				font-size:40px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+font-style 
+-----------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+				letter-spacing:5px;
+				font-size:40px;
+				font-style:italic;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+font-family 
+-----------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+				letter-spacing:5px;
+				font-size:40px;
+				font-style:italic;
+				font-family:cursive;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+				letter-spacing:5px;
+				font-size:40px;
+				font-style:italic;
+				font-family:monospace;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+font-weight 
+------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+				letter-spacing:5px;
+				font-size:40px;
+				font-style:italic;
+				font-family:monospace;
+				font-weight:bold;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			p
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+				text-transform:uppercase;
+				text-decoration:underline;
+				letter-spacing:5px;
+				font-size:40px;
+				font-style:italic;
+				font-family:monospace;
+				font-weight:thin;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<p>Paragraph Tag </p>
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

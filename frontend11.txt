@@ -1,0 +1,288 @@
+CSS display property
+====================
+The display property spcifies the display behaviour of an element.
+
+syntax
+--------
+	display: value;
+
+value		description
+---------	-------------------
+none		The element is completely removed.
+
+inline 		displays an element as on inline element.
+		Any height and width properties will not effect.
+
+block		Displays an element as block element.
+		IT starts on a new line and takes up the whole width.
+
+inline-block	displays an element as an inline-level container.
+		The element itself is formatting  as an inline element.
+		but we can apply height and width values.
+
+
+display:none 
+-------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+
+		<!-- internal CSS -->
+		<style>
+			h1
+			{
+				display: none;	
+			}
+			p
+			{
+				display:none;	
+			}
+		</style>	
+
+	</head>
+	<body>
+			<h1> Heading Tag </h1>
+
+			<p> Paragraph Tag </p>
+	</body>
+</html>
+
+display:block 
+--------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+
+		<!-- internal CSS -->
+		<style>
+			span
+			{
+				display:block;
+			}
+		</style>	
+
+	</head>
+	<body>
+			<span> Span Tag 1</span>
+			<span> Span Tag 2</span>
+			<span> Span Tag 3</span>
+	</body>
+</html>
+
+display:inline 
+---------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+
+		<!-- internal CSS -->
+		<style>
+			div
+			{
+				display:inline;
+			}	
+		</style>	
+
+	</head>
+	<body>
+			<div> Division Tag1 </div>
+			<div> Division Tag2 </div>
+			<div> Division Tag3 </div>
+	</body>
+</html>
+
+display:inline-block
+-------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+
+		<!-- internal CSS -->
+		<style>
+			div
+			{
+				display:inline-block;
+				border:2px solid black;
+				width:200px;
+			}	
+		</style>	
+
+	</head>
+	<body>
+			<div> Division Tag1 </div>
+			<div> Division Tag2 </div>
+			<div> Division Tag3 </div>
+	</body>
+</html>
+
+
+CSS Design 
+===========
+
+Task3
+|
+|------css 
+	|
+	|---mystyles.css
+|
+|------index.html 
+
+
+index.html 
+-----------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+
+	<!-- add external css -->
+	<link rel="stylesheet" type="text/css" href="css/mystyles.css">
+
+</head>
+<body>
+		<header class="header">
+			<h3>I<span>HUB</span>TALENT</h3>
+
+			<ul>
+				<li><a href=""> Home </a></li>
+				<li><a href=""> About </a></li>
+				<li><a href=""> Service </a></li>
+				<li><a href=""> Portfolio </a></li>
+				<li><a href=""> Contact </a></li>
+			</ul>
+		</header>
+</body>
+</html>
+
+mystyles.css
+-------------
+*
+{
+	margin:0;
+	padding:0;
+}
+
+.header
+{
+	width:100%;
+	height:60px;
+	background-color: #FEA47F;
+}
+.header h3
+{
+	float:left;
+	padding: 15px 50px;
+}
+.header h3 span
+{
+	color:#FFF;
+	font-style: italic;
+}
+
+
+.header ul
+{
+	float:right;
+	list-style-type: none;
+}
+.header ul li
+{
+	display:inline-block;
+	width:100px;
+	padding: 17px 0;
+}
+
+.header ul li a 
+{
+	text-decoration: none;
+	color:#FFF;
+}
+.header ul li a:hover
+{
+	color:#B33771;
+}
+
+
+
+CSS box-sizing property 
+========================
+It includes width,border and padding.But it will not include marging.
+ex:
+	box-sizing: content-box | border-box 
+
+
+box-sizing: content-box 
+------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+
+	<!-- internal CSS -->
+	<style>
+		
+		div
+		{
+			width:200px;
+			height:200px;
+			background-color:red;
+			border:5px solid black;
+			padding:10px;
+			box-sizing: content-box;
+		}
+
+	</style>
+
+</head>
+<body>
+		<div></div>
+</body>
+</html>
+
+box-sizing: content-box 
+------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPage!</title>
+
+	<!-- internal CSS -->
+	<style>
+		
+		div
+		{
+			width:200px;
+			height:200px;
+			background-color:red;
+			border:5px solid black;
+			padding:10px;
+			box-sizing: border-box;
+		}
+
+	</style>
+
+</head>
+<body>
+		<div></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

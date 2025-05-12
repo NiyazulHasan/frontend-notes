@@ -1,0 +1,856 @@
+
+CSS position property
+=====================
+The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).
+
+The following are the list of values to position property.
+
+static 
+---------------
+	It is default value. Elements render in order, as they appear in the document flow 	
+
+absolute 
+--------------
+	The element is positioned relative to its first positioned (not static) ancestor element 	
+fixed 	
+-----------
+	The element is positioned relative to the browser window 	
+relative 
+-------------
+	The element is positioned relative to its normal position, so "left:20px" adds 20 pixels 	to the element's LEFT position.
+ 	
+sticky 	
+-----------
+	The element is positioned based on the user's scroll position 
+
+
+css position property mandatory should have following properties.
+i)left
+ii)right
+iii)top
+iv)bottom
+
+position:static 
+-----------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			img
+			{
+				width:200px;
+				height: 200px;
+				position: static;
+				top:0;
+				left:0;
+			}
+		</style>	
+	</head>
+	<body>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<img src="images/rock.jpg"/>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+	</body>
+</html>
+
+position:absolute 
+------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			img
+			{
+				width:200px;
+				height: 200px;
+				position: absolute;
+				top:0;
+				left:0;
+			}
+		</style>	
+	</head>
+	<body>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<img src="images/rock.jpg"/>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+	</body>
+</html>
+
+
+position:relative
+------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			img
+			{
+				width:200px;
+				height: 200px;
+				position: relative;
+				top:0;
+				left:0;
+			}
+		</style>	
+	</head>
+	<body>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<img src="images/rock.jpg"/>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+	</body>
+</html>
+
+position:fixed
+----------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			img
+			{
+				width:200px;
+				height: 200px;
+				position: fixed;
+				top:0;
+				left:0;
+			}
+		</style>	
+	</head>
+	<body>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<img src="images/rock.jpg"/>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+	</body>
+</html>
+
+position:sticky 
+--------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			img
+			{
+				width:200px;
+				height: 200px;
+				position: sticky;
+				top:0;
+				left:0;
+			}
+		</style>	
+	</head>
+	<body>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<img src="images/rock.jpg"/>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+	</body>
+</html>
+
+CSS Design 
+===========
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.img1
+			{
+				width:300px;
+				height:300px;
+				position:relative;
+				left:600px;
+				
+			}
+			.img2
+			{
+				width:300px;
+				height:300px;
+			}
+		</style>	
+	</head>
+	<body>
+			
+			<img src="images/girl1.jpg" class="img1" />
+			<img src="images/girl2.jpg" class="img2" />
+	</body>
+</html>
+
+
+CSS z-index property
+====================
+The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			img
+			{
+				width:200px;
+				height:200px;
+				position: absolute;
+				left:0;
+				top:0;
+				z-index: 1;
+			}
+		</style>	
+	</head>
+	<body>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<img src="images/girl1.jpg"/>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			img
+			{
+				width:200px;
+				height:200px;
+				position: absolute;
+				left:0;
+				top:0;
+				z-index: -1;
+			}
+		</style>	
+	</head>
+	<body>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<p>
+				Web technology encompasses the tools, protocols, and programming languages used to create, deliver, and interact with content on the internet. It includes technologies like HTML, CSS, JavaScript for frontend development, and server-side technologies like PHP, Python, databases, and communication protocols like HTTP. 
+			</p>
+			<img src="images/girl1.jpg"/>
+	</body>
+</html>
+
+
+CSS flexbox
+=============
+Flexbox is a one-dimensional layout methods for laying out items in rows and columns.
+
+CSS flexbox is a better way to align items into a container.
+
+Flexbox= flexible + box.
+
+To create a flexbox model, we need to define a "flex-container".
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-direction: row;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-direction: row-reverse;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-direction: column;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-direction: column-reverse;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-flow: row wrap;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: center;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-around;
+			}
+			.container .item
+			{
+				width:150px;
+				height:150px;
+				border:2px solid black;
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="container">
+				<div class="item">Box1</div>
+				<div class="item">Box2</div>
+				<div class="item">Box3</div>
+				<div class="item">Box4</div>
+				<div class="item">Box5</div>
+				<div class="item">Box6</div>
+			</div>
+	</body>
+</html>
+
+CSS  Gradients
+=====================
+CSS gradients let you display smooth transitions between two or more specified colors.
+
+CSS defines three types of gradients:
+
+1)Linear Gradients (goes down/up/left/right/diagonally)
+
+2)Radial Gradients (defined by their center)
+
+3)Conic Gradients (rotated around a center point)
+
+linear-gradient()
+-----------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			body
+			{
+				height:100vh;
+				background: linear-gradient(red,orange);
+			}
+		</style>	
+	</head>
+	<body>
+			
+	</body>
+</html>
+
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			body
+			{
+				height:100vh;
+				background: linear-gradient(to top,red,orange);
+			}
+		</style>	
+	</head>
+	<body>
+			
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			body
+			{
+				height:100vh;
+				background: linear-gradient(to left,red,orange);
+			}
+		</style>	
+	</head>
+	<body>
+			
+	</body>
+</html>
+
+
+conic-gradient() 
+-----------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			body
+			{
+				height:100vh;
+				background: conic-gradient(red,blue);
+			}
+		</style>	
+	</head>
+	<body>
+			
+	</body>
+</html>
+
+radial-gradient() 
+-----------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+
+			body
+			{
+				height:100vh;
+				background: radial-gradient(red,blue);
+			}
+		</style>	
+	</head>
+	<body>
+			
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

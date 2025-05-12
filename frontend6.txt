@@ -1,0 +1,428 @@
+Graphics in HTML
+=================
+There are two ways to draw the graphics in HTML.
+
+1) SVG 
+
+2) CANVAS 
+
+1) SVG 
+-----------
+SVG stands for Scalable Vector Graphics.
+
+It is used to draw two dimensional based vector graphics.
+
+World Wide Web Consortium (W3C) prefers SVG technology to draw the graphics in HTML.
+
+A <svg> tag is a container tag.
+
+A <svg> tag/element contains various methods to draw circle, rectangle, polygon, graphic images and etc. 
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<svg style="border:2px solid black;width:400px;height:400px;">
+			
+			<circle cx="200px" cy="200px" r="80px" 
+					fill="#FFFF00" stroke="#FF0000" stroke-width="5px"/>
+			
+		</svg>
+	</body>
+</html>
+
+ex:
+--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<svg style="border:2px solid black;width:400px;height:400px;">
+			
+			<rect x="50px" y="100px" width="300px" height="200px"
+						fill="#FFFF00" stroke="#FF0000" stroke-width="5px"/>
+			
+		</svg>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<svg style="border:2px solid black;width:400px;height:400px;">
+			
+			<polygon points="100,90 150,190 50,190"
+						fill="#FFFF00" stroke="#FF0000" stroke-width="5px"/>
+			
+		</svg>
+	</body>
+</html>
+
+
+2) Canvas 
+------------
+It is used to draw vector graphics via javascript.
+
+A <canvas> tag is a container tag.
+
+A <canvas> tag contains various methods to draw lines, circle, rectangle, polygon , graphic images and etc.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<canvas id="myId" style="border:2px solid black;width:200px;height:200px;">
+			
+		</canvas>
+		
+		<script>
+			var context = document.getElementById("myId");
+			var c = context.getContext("2d");
+			c.moveTo(0,0);
+			c.lineTo(800,400);
+			c.stroke();
+		</script>
+		
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<canvas id="myId" style="border:2px solid black;width:200px;height:200px;">
+			
+		</canvas>
+		
+		<script>
+			var context = document.getElementById("myId");
+			var c = context.getContext("2d");
+			c.beginPath();
+			c.arc(90,60,20,0,2*Math.PI);
+			c.stroke();
+		</script>
+		
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<canvas id="myId" style="border:2px solid black;width:200px;height:200px;">
+			
+		</canvas>
+		
+		<script>
+			var context = document.getElementById("myId");
+			var c = context.getContext("2d");
+			c.font="30px Georgia";
+			c.fillText("Hello World",40,50);
+		</script>
+		
+	</body>
+</html>
+
+HTML inline frame
+==================
+A <iframe> tag is a inline frame tag.
+
+It is used to embed other documents in a current window.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<iframe src="http://www.ihubtalent.com"  width="300px" height="300px">
+		</iframe>
+		
+	</body>
+</html>
+
+ex:
+---
+index.html 
+-----------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<a href="a.html" target="myFrame"> click </a>
+		<br><br>
+		<iframe src="" name="myFrame" width="300px" height="300px"></iframe>
+		
+	</body>
+</html>
+
+a.html 
+------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A.html</title>
+	</head>
+	<body bgcolor="#FF00FF">
+	
+		This is A.html 
+		
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<a href="http://www.ihubtalent.com" target="myFrame"> click </a>
+		<br><br>
+		<iframe src="" name="myFrame" width="300px" height="300px"></iframe>
+		
+	</body>
+</html>
+
+
+Steps to display google map in a web page
+==========================================
+step1:
+-----
+	Goto Google Maps.
+	ex:
+		http://www.google.com/maps
+step2:
+------
+	Type Ihub Talent Management in search box.
+
+
+step3:
+-----
+	Click to menu button.
+
+step4:
+-----
+	select to shared or embed map.
+
+
+step5:
+-----
+	select to embed a map (link).
+
+step6:
+----
+	Now copy the html and paste in HTML document.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.95105179139!2d78.42657825541993!3d17.43635330000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb919633f78bef%3A0xbb63515db9bc2eba!2siHub%20Talent%20Info%20Systems!5e0!3m2!1sen!2sin!4v1746018110751!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</body>
+</html>
+
+
+
+
+Q) What is the difference between HTML and HTML5 ?
+
+HTML						HTML5
+----------					------------
+A <!DOCTYPE> is used to represent HTML.		A <!DOCTYPE html> is used to represent HTML5.
+
+It is a slower.					It is a faster because it is leight weight.
+
+It is not efficient.				It is more efficient.
+
+It is inflexible for the programmer.		It  is flexible for the programmer.
+
+It is a less mobile friendly.			It is more mobile friendly.'
+
+It does not support drag and drop effects.	It suports drag and drop effects.
+
+It does not allow us to execute javascript.	IT allows us to execute javascript.	
+
+Vector graphics is possible by using VML,	Vector graphics is possible by using internal 	
+Silver light and adope flash.			technologies like SVG and CANVAS.
+
+It does not support audio or video without 	It supports audio and video by using <audio> and 
+using flash player.				<video> tag
+
+It can't handle inaccurate syntax.		It can handle inaccurate syntax.
+
+Shapes like circle, rectangle, polygon		Shapes like circle, rectangle, polygon and etc 
+and etc are not easy to draw.			are easy to draw.
+
+
+HTML audio 
+==========
+The HTML <audio> tag is used to play an audio file on a web page.
+
+A <audio> tag contains "controls" attribute adds audio control like play, pause, volume and etc.
+
+The <source> tag/element allows us to specify alternate audio file which the browser can choose.
+
+HTML audio formats can be mp3, wav, ogg and etc.
+
+HTML audio media types are
+
+ex:
+	File Formats		Media Type 
+	----------------	----------
+	mp3			audio/mpeg
+	ogg			audio/ogg
+	wav			audio/wav 
+	and etc.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+
+		<audio controls>
+			<source src="media/song.mp3" type="audio/mpeg"/>
+		</audio>
+
+	</body>
+</html>
+
+HTML <video> tag 
+==================
+The <video> tag is used to embed video content in a document such as movie clip, other video streams 
+and etc.
+
+A <video> Tag contains one or more <source> tag  which different video source.
+
+There are three supported video formats i.e mp4, webM and OGG.
+
+HTML video media types are.
+
+ex:
+	File Format 		Media type 
+	----------		-----------
+	mp4			video/mp4
+	ogg			video/ogg
+	and etc.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+
+		<video controls>
+			<source src="media/video.mp4" type="video/mp4"/>
+		</video>
+
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+
+		<video controls width="600px" height="600px">
+			<source src="media/video.mp4" type="video/mp4"/>
+		</video>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

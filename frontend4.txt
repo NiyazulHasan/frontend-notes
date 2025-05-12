@@ -1,0 +1,786 @@
+Types of List in HTML
+=====================
+We have three types of list in HTML.
+
+1) Ordered List 
+
+2) Unordered list 
+
+3) Description List 
+
+
+1) Ordered List
+---------------
+Ordered list contains numerics and alphabets.
+
+A <ol> tag is used to represent ordered list in HTML.
+
+Ordered list contains list of items.
+
+A <li> tag is used to represent list of item.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ol>
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ol>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ol start="101">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ol>	
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ol type="i">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ol>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ol type="I">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ol>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ol type="a">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ol>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ol type="A">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ol>	
+	</body>
+</html>
+
+2) Unordered list
+-----------------
+Unordered list contains bullets.
+
+A <ul> tag is used to represent unordered list in HTML.
+
+Unordered list contains list of items.
+
+A <li> tag is used to represent list of item.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ul type="disc">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ul>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ul type="square">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ul>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		Courses:
+		<ul type="circle">
+			<li>NodeJS</li>
+			<li>AngularJS</li>
+			<li>ReactJS</li>
+			<li>ExpressJS</li>
+		</ul>	
+	</body>
+</html>
+
+3) Description List
+--------------------
+A <dl> tag is used to represent description list in HTML.
+
+A description list contains description term and description definition.
+
+A <dt> tag is used to represent description term.
+
+A <dd> tag is used to represent description definition.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<dl>
+			<dt>HTML</dt>
+			<dd>It is a markup language for static web pages</dd>
+		</dl>
+	</body>
+</html>
+
+HTML Tables 
+============
+A table is a used to represent the data.
+
+A table is a collection of rows and columns.
+
+A <table> tag is used to represent a table in HTML.
+
+A <tr> tag is used to represent table row.
+
+A <th> tag is used to represent table heading.
+
+A <td> tag is used to represent table data.
+
+A table heading comes in bold and centered.
+
+A table data comes in normal text and left align.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<table border="0">
+			<tr>
+				<th>No</th>
+				<th>Name</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td>101</td>
+				<td>Alan</td>
+				<td>Florida</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>Jessi</td>
+				<td>Chicago</td>
+			</tr>
+			<tr>
+				<td>103</td>
+				<td>Nancy</td>
+				<td>Texas</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>Kelvin</td>
+				<td>Vegas</td>
+			</tr>
+
+
+		</table>
+	</body>
+</html>
+
+ex:-
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<table border="1" width="50%">
+			<tr>
+				<th>No</th>
+				<th>Name</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td>101</td>
+				<td>Alan</td>
+				<td>Florida</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>Jessi</td>
+				<td>Chicago</td>
+			</tr>
+			<tr>
+				<td>103</td>
+				<td>Nancy</td>
+				<td>Texas</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>Kelvin</td>
+				<td>Vegas</td>
+			</tr>
+
+
+		</table>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<table border="1" cellspacing="20px" cellpadding="10px">
+			<tr>
+				<th>No</th>
+				<th>Name</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td>101</td>
+				<td>Alan</td>
+				<td>Florida</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>Jessi</td>
+				<td>Chicago</td>
+			</tr>
+			<tr>
+				<td>103</td>
+				<td>Nancy</td>
+				<td>Texas</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>Kelvin</td>
+				<td>Vegas</td>
+			</tr>
+
+
+		</table>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<table border="1" width="50%" align="center">
+			<tr bgcolor="cyan">
+				<th>No</th>
+				<th>Name</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td>101</td>
+				<td>Alan</td>
+				<td>Florida</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>Jessi</td>
+				<td>Chicago</td>
+			</tr>
+			<tr>
+				<td>103</td>
+				<td>Nancy</td>
+				<td>Texas</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>Kelvin</td>
+				<td>Vegas</td>
+			</tr>
+
+
+		</table>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<table border="1" width="50%" align="center">
+
+			<caption>Employee Details</caption>
+
+			<tr bgcolor="cyan">
+				<th>No</th>
+				<th>Name</th>
+				<th>Address</th>
+			</tr>
+			<tr>
+				<td>101</td>
+				<td>Alan</td>
+				<td>Florida</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>Jessi</td>
+				<td>Chicago</td>
+			</tr>
+			<tr>
+				<td>103</td>
+				<td>Nancy</td>
+				<td>Texas</td>
+			</tr>
+			<tr>
+				<td>104</td>
+				<td>Kelvin</td>
+				<td>Vegas</td>
+			</tr>
+
+
+		</table>
+	</body>
+</html>
+
+
+HTML forms 
+===========
+HTML forms are used to accept the data from the user.
+
+HTML forms will forward the data to database or server for processing.
+
+A <form> tag is used to represent HTML form.
+
+We have following list of form components.
+
+ex:
+	label 
+	textfield 
+	password field
+ 	radio button 
+	checkbox 
+	select box 
+	Buttons 
+	and etc.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<form>
+			<label>UserName:</label>
+			<input type="text" name="t1"/>
+				
+			<br>
+
+			<label>Passord:</label>
+			<input type="password" name="t2"/>
+
+			<br>
+
+			<label>Gender:</label>
+			<input type="radio" name="t3" value="male"/> MALE
+			<input type="radio" name="t3" value="female"/> FEMALE
+
+			<br>
+			
+			<label>Maritial Status:</label>
+			<input type="checkbox" name="t4" value="married"/> MARRIED
+			<input type="checkbox" name="t4" value="single"/> SINGLE
+			
+			<br>
+			
+			<label>Country</label>
+			<select name="t5">
+				<option value="">none</option>
+				<option value="ind">India</option>
+				<option value="aus">Australia</option>
+				<option value="usa">America</option>
+
+			</select>	
+
+			<br>
+			<label>Address</label>
+			<textarea rows="5" cols="15"></textarea>
+
+			<br>
+			<input type="reset" value="reset"/>
+			<input type="submit" value="submit"/>
+					
+		</form>
+	</body>
+</html>
+
+A "action" attribute describes what action has to be performed when user clicked on submit button.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<form action="#">
+			<label>UserName:</label>
+			<input type="text" name="t1"/>
+				
+			<br>
+
+			<label>Passord:</label>
+			<input type="password" name="t2"/>
+
+			<br>
+
+			<label>Gender:</label>
+			<input type="radio" name="t3" value="male"/> MALE
+			<input type="radio" name="t3" value="female"/> FEMALE
+
+			<br>
+			
+			<label>Maritial Status:</label>
+			<input type="checkbox" name="t4" value="married"/> MARRIED
+			<input type="checkbox" name="t4" value="single"/> SINGLE
+			
+			<br>
+			
+			<label>Country</label>
+			<select name="t5">
+				<option value="">none</option>
+				<option value="ind">India</option>
+				<option value="aus">Australia</option>
+				<option value="usa">America</option>
+
+			</select>	
+
+			<br>
+			<label>Address</label>
+			<textarea rows="5" cols="15"></textarea>
+
+			<br>
+			<input type="reset" value="reset"/>
+			<input type="submit" value="submit"/>
+					
+		</form>
+	</body>
+</html>
+
+A "target" attribute describes a submitted data must be open in a same window or new window.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<form action="#"  target="_self">
+			<label>UserName:</label>
+			<input type="text" name="t1"/>
+				
+			<br>
+
+			<label>Passord:</label>
+			<input type="password" name="t2"/>
+
+			<br>
+
+			<label>Gender:</label>
+			<input type="radio" name="t3" value="male"/> MALE
+			<input type="radio" name="t3" value="female"/> FEMALE
+
+			<br>
+			
+			<label>Maritial Status:</label>
+			<input type="checkbox" name="t4" value="married"/> MARRIED
+			<input type="checkbox" name="t4" value="single"/> SINGLE
+			
+			<br>
+			
+			<label>Country</label>
+			<select name="t5">
+				<option value="">none</option>
+				<option value="ind">India</option>
+				<option value="aus">Australia</option>
+				<option value="usa">America</option>
+
+			</select>	
+
+			<br>
+			<label>Address</label>
+			<textarea rows="5" cols="15"></textarea>
+
+			<br>
+			<input type="reset" value="reset"/>
+			<input type="submit" value="submit"/>
+					
+		</form>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<form action="#"  target="_blank">
+			<label>UserName:</label>
+			<input type="text" name="t1"/>
+				
+			<br>
+
+			<label>Passord:</label>
+			<input type="password" name="t2"/>
+
+			<br>
+
+			<label>Gender:</label>
+			<input type="radio" name="t3" value="male"/> MALE
+			<input type="radio" name="t3" value="female"/> FEMALE
+
+			<br>
+			
+			<label>Maritial Status:</label>
+			<input type="checkbox" name="t4" value="married"/> MARRIED
+			<input type="checkbox" name="t4" value="single"/> SINGLE
+			
+			<br>
+			
+			<label>Country</label>
+			<select name="t5">
+				<option value="">none</option>
+				<option value="ind">India</option>
+				<option value="aus">Australia</option>
+				<option value="usa">America</option>
+
+			</select>	
+
+			<br>
+			<label>Address</label>
+			<textarea rows="5" cols="15"></textarea>
+
+			<br>
+			<input type="reset" value="reset"/>
+			<input type="submit" value="submit"/>
+					
+		</form>
+	</body>
+</html>
+
+
+
+HTML Colors 
+============
+HTML supports two values in color.
+
+1) valid color name 
+
+2) Hexavalue 
+
+
+1) valid color name
+-------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body bgcolor="tomato">
+		<font color="white">
+			<h1> Valid Color Name Example</h1>
+		</font>
+	</body>
+</html>
+
+2) Hexavalue
+--------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body bgcolor="#00FF00">
+		<font color="#FFFFFF">
+			<h1> Hexavalue Example</h1>
+		</font>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

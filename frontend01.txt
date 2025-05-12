@@ -1,0 +1,278 @@
+Institute Name 	: Quality Thought / Ihub Talent Management 
+
+Websites	: www.qualitythought.in / www.ihubtalent.com 
+
+Location	: Ameerpet, Hyderabad.
+
+Trainer Name	: Niyaz Sir 
+
+Experience	: 15+ years of experience in development and training.
+
+Course Name	: Frontend Development 
+
+Duration	: 2 Months 
+
+Mode		: Online/Offline 
+
+Recordings 	: Free 
+
+Project		: Response Website 
+
+				
+Frontend Development : Frontend Developer 
+
+	> HTML5
+	> CSS3
+	> JavaScript 
+	> Bootstrap5
+	> ReactJS 
+	> GIT/GITHUB 
+
+HTML 
+=====
+HTML stands for Hypertext Markup Language.
+
+It is widely used language on web to develop web pages and web applications.
+
+It is developed by Burner's Lee in late 1991.
+
+It is a tag based language.
+
+HTML tag contains opening tag and closing tag.
+
+ex:
+	<html> - opening tag 
+
+	</html> - closing tag 
+
+It is a case insensitive language.
+ex:
+	<html>
+	<HTML>
+
+HTML Tag may contains attributes and each attribute having attribute name and attribute value.
+ex:
+	<body bgcolor="red">
+
+	</body>
+
+HTML is used to develop client side components.
+
+We need to save HTML document with .html or .htm extension.
+
+All HTML documents execute in a browser window.
+
+ex:
+	chrome 
+	mozilla 
+	edge 
+	opera 
+	chromium 
+	and etc.
+
+HTML2.0 specification was released in the year of 1995.
+
+HTML4.0 specification was released in the year of 1999.
+
+HTML5 which is a extension of HTML4.0 was released in the year of 2005.
+
+The main objective of HTML5 is used to develop leight weight components.
+
+HTML5 is also known as Advanced Hypertext Markup Language.
+
+
+HTML Skeleton 
+==============
+<!DOCTYPE html>
+<html>
+	<head>
+		-
+		- // Head related tags 
+		-
+	</head>		
+	<body>
+		-
+		- // body related tags
+		-
+	</body>
+</html>
+
+<!DOCTYPE html>
+--------------
+	It is used to represent HTML5 document.
+
+<html>
+------
+	It is a root tag for entire HTML document.
+	It contains two child tags.
+	1) <head> tag 
+	2) <body> tag 
+
+<head> tag 
+----------
+	It is used to declare following things.
+	ex:
+		1) Title of a page 
+		2) Favorite icon 
+		3) MetaData 
+		4) Styles 
+		5) Scripts 
+
+<body> tag 
+-----------
+	It contains actual content of our web page.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		Welcome to HTML class
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+	</head>
+	<body>
+		Welcome to HTML class
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+
+		<link rel="icon" href="dental.png">	
+	</head>
+	<body>
+		Welcome to HTML class
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- page title --> 
+		<title>MyPage!</title>
+
+		<!-- favicon --> 
+		<link rel="icon" href="dental.png">	
+	</head>
+	<body>
+		<!-- custom msg -->
+		Welcome to HTML class
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- page title --> 
+		<title>MyPage!</title>
+
+		<!-- favicon --> 
+		<link rel="icon" href="dental.png">	
+	</head>
+	<body bgcolor="cyan">
+		<!-- custom msg -->
+		Welcome to HTML class
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- page title --> 
+		<title>MyPage!</title>
+
+		<!-- favicon --> 
+		<link rel="icon" href="dental.png">	
+	</head>
+	<body background="bg.jpg">
+		<!-- custom msg -->
+		Welcome to HTML class
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

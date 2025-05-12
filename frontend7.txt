@@ -1,0 +1,660 @@
+Q) What is the difference between <div> and <span> tag?
+
+<div> tag					<span> tag 
+---------					-----------
+It is a block element.				It is a inline element.
+
+It is used to wrap section of document.		It is used to wrap small portion of a text.
+
+It is use to create CSS based layouts.		It is used to stylized the text.	
+
+
+
+Q) What are the tags removed from HTML5?
+
+<acronym>, <applet>, <basefont> , <big> , <center>, <dir> , <font> , 
+<frameset> , <noframes> , <isindex>, <strike> and etc.	
+
+
+
+Q) What are the tags introduced in HTML5?
+
+<header>, <footer>, <section>, <nav>, <aside>
+<canvas>, <audio>, <video>, <progress>, <ruby> and etc.
+
+
+How HTML document executes in a browser window 
+===============================================
+Diagram: frontend7.1
+
+First HTML parser will parse the data from HTML document and later it handovers to DOM.
+
+DOM stands for Document Object Model.
+
+DOM is a tree node structure for our HTML document.
+
+Finally tree node structure executes in a browser window.
+
+
+CSS
+=====
+CSS stands for Cascading Style Sheets.
+
+It is widely used language on web like HTML.
+
+It is used to apply the styles on elements.
+
+The latest version of CSS3 was introduced in 2001.
+
+The main objective of CSS are
+
+1) To set position of an element.
+
+2) To apply the styles on elements to describe how an element should look like.
+
+3) To perform some sort of animations.
+
+
+
+Advantages:
+-----------
+1) It is easy to learn and easy to use.
+
+2) Performance is good.
+
+3) It saves lot of development time.
+
+4) It supports global change.
+
+5) It supported by all major browsers.
+
+6) Flexibility.
+
+
+Disadvantages
+--------------
+
+1) Fragmentation 
+
+2) Need to update all the versions of CSS.
+
+
+CSS example 
+============
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			-
+			- 
+			-
+		</style>
+	</head>
+	<body>
+		-
+		-
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				color:blue;
+				background-color:cyan;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1> Heading Tag </h1>
+
+	</body>
+</html>
+
+Here CSS propertise cascade from head to body.
+
+
+CSS syntax
+==========
+CSS rule set contains selector and declaration block.
+ex:
+	h1{color:blue;background-color:cyan};
+
+A select is a HTML element to which we need to apply the styles.
+
+A declaration block contains list of CSS properties seperated with semicolon.
+
+Each CSS property contains property name and property value seperated with colon.
+
+
+Types of CSS 
+=============
+We have three types of CSS.
+
+1) Inline CSS 
+
+2) Internal CSS 
+
+3) External CSS 
+
+
+1) Inline CSS 
+--------------
+It is used to apply unique style on single element.
+
+By using "style" attribute we can implement inline CSS.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+
+		<h1 style="color:blue"> Heading Tag </h1>
+		<p style="background-color:cyan"> Paragraph Tag </p>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+
+		<h1 style="color:blue"> Heading Tag1 </h1>
+		<h1> Heading Tag 2</h1>
+	</body>
+</html>
+
+2) Internal CSS
+----------------
+It is used to apply unique styles on single web page.
+
+Using <style> tag we can implements internal CSS.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				color:blue;
+			}
+			p
+			{
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1> Heading Tag </h1>
+		<p> Paragraph Tag </p>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			h1
+			{
+				color:blue;
+				background-color:cyan;
+				text-align:center;
+			}
+		</style>
+	</head>
+	<body>
+
+		<h1> Heading Tag 1</h1>
+		<h1> Heading Tag 2 </h1>
+	</body>
+</html>
+
+
+3) External CSS 
+----------------
+It is used to apply unique styles on entire web aplication/website.
+
+In external CSS we need to create two files i.e .html and .css file.
+
+To attach CSS file to HTML document we need to use <link> tag.
+
+
+ex:
+----
+
+index.html 
+----------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<!-- add external CSS -->
+		<link rel="stylesheet" href="mystyles.css">
+		
+	</head>
+	<body>
+
+		<h1> Heading Tag 1</h1>
+		<p> Paragraph Tag </p>
+	</body>
+</html>
+
+mystyles.css
+------------
+body
+{
+	background-color:cyan;
+}
+h1
+{
+		text-align:center;
+		color:blue;
+}
+p
+{
+		background-color:white;
+}
+
+CSS background property 
+========================
+CSS background property is used to set the background in a web page.
+
+If we use background property inside <body> tag then entire web page background will change.
+
+We can apply the background to any HTML element.
+ex:
+	<h1>, <p>, <div> and etc.
+
+We have following list of CSS background properties.
+
+1) background-color 
+
+2) background-image
+
+3) background-repeat
+
+4) background-size 
+
+5) background -position 
+
+6) background-attachment
+
+7) background shorthand
+
+8) background-blend-mode 
+
+
+
+1) background-color
+-------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			h1
+			{
+				background-color:yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+2) background-image 
+--------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+3) background-repeat
+-----------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+4) background-size 
+-------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+				background-size: 1400px 1200px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+5) background-position 
+-----------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+				background-size: 500px;
+				background-position:center 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+				background-size: 500px;
+				background-position:right 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+				background-size: 500px;
+				background-position:left 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+6) background-attachment 
+------------------------
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+				background-size: 500px;
+				background-position:center 0px;
+				background-attachment:scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background-color:#FFFFFF;
+				background-image: url("images/bg.jpg");
+				background-repeat:no-repeat;
+				background-size: 500px;
+				background-position:center 0px;
+				background-attachment:fixed;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+7) background shorthand 
+-------------------------
+background-color:#FFFFFF;
+background-image: url("images/bg.jpg");
+background-repeat:no-repeat;
+background-position:center 0px;
+background-attachment:fixed;
+
+or 
+
+background : #FFFFFF url("images/bg.jpg") no-repeat center 0px fixed;
+
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>	
+		
+		<style>
+			body
+			{
+				background : #FFFFFF url("images/bg.jpg") no-repeat center 0px fixed;
+				background-size: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>
+		<h1>CSS background property </h1>	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

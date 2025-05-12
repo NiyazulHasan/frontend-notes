@@ -1,0 +1,442 @@
+Basic HTML Tags 
+===============
+
+Heading Tag 
+===========
+Heading tags are used to diplay the headings in a web page.
+
+We have six heading tags i.e <h1> to <h6>.
+
+Heading tags display the text in bold and size of the text is depends upon number of heading tags.
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<h1> Heading Tag 1</h1>	
+		<h2> Heading Tag 2</h2>
+		<h3> Heading Tag 3</h3>	
+		<h4> Heading Tag 4</h4>	
+		<h5> Heading Tag 5</h5>	
+		<h6> Heading Tag 6</h6>		
+	</body>
+</html>
+
+Paragraph Tag 
+=============
+A <p> tag is used to display the paragraph in a web page.
+
+ex:
+--
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<p>
+		Web technology encompasses the tools, protocols, languages, and methodologies used to create, deliver, and interact with content on the internet. It's the foundation of the World Wide Web, enabling websites, web applications, and online communication. 
+		</p>	
+	</body>
+</html>
+
+
+Bold Tag 
+=========
+A <b> tag is used to display the text in bold without importance.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<b>This is Bold Tag</b>	
+	</body>
+</html>
+
+Strong Tag 
+===========
+A <strong> tag is used to display the text in bold with importance.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<strong>This is strong tag</strong>
+	</body>
+</html>
+
+Italic Tag 
+==========
+A <i> tag is used to display the text in italic without force.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<i>This is italic tag</i>
+	</body>
+</html>
+
+Emphasize tag 
+==============
+A <em> tag is used to display the text in italic with force.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<em>This is emphasize tag</em>
+	</body>
+</html>
+
+<center> tag 
+============
+A <center> tag is used to display the text in center.
+
+HTML5 does not support <center> tag.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<center>
+			This is center tag
+		</center>
+	</body>
+</html>
+
+Underline tag 
+==============
+A <u> tag is used to display the text in underline.
+
+HTML5 does not support underline tag.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<u>This is underline text</u>
+	</body>
+</html>
+
+Font Tag 
+========
+A <font> tag is used to specify text size, color and font face.
+
+HTML5 does not support <font> tag.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<font color="blue" size="50px" face="cursive">
+			This is Font Tag
+		</font>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<font color="blue" size="50px" face="monspace">
+			This is Font Tag
+		</font>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<font color="blue" size="50px" face="sans-serif">
+			This is Font Tag
+		</font>
+	</body>
+</html>
+
+Breakline Tag 
+==============
+A <br> tag is used to break the line.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		This is HTML class 
+		<br>
+		This is QualityThought 
+	</body>
+</html>
+
+Horizontal tag 
+=============
+A <hr> tag is used to display horizontal line in a web page.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		This is HTML class 
+		<hr>
+		This is QualityThought 
+		
+	</body>
+</html>
+
+Marquee tag 
+===========
+A <marquee> tag is used to scroll the text in a web page.
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<marquee>This is HTML class from Niyaz Sir</marquee>
+		
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<marquee direction="right">This is HTML class from Niyaz Sir</marquee>
+		
+	</body>
+</html>
+
+Nested Tags in HTML
+===================
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<center>
+			<h1>
+				<font color="blue">
+					Welcome to HTML classes
+				</font>
+			</h1>
+		</center>
+	</body>
+</html>
+
+Phrase Tags 
+===========
+Phrase tags are special purpose tags which defines special meaning to the text of block of code.
+
+We have following list of phrase tags.
+
+1) Abbreviation - <abbr> 
+
+2) Short quote 	- <q> 
+
+3) Address	- <address> 
+
+4) Keyboard	- <kbd> 
+
+5) Code		- <code> 
+
+6) Strike       - <strike> or <s> 
+
+7) Mark		- <mark> 
+
+and etc.
+
+1) Abbreviation - <abbr> 
+------------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<p>
+		<abbr title="Hypertext Markup Language">HTML</abbr> is widely used language 
+			on web to develop web pages.	
+		</p>
+	</body>
+</html>
+
+2) Short quote 	- <q> 
+---------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<q>HTML is a widely used language on web to develop web pages</q>
+	</body>
+</html>
+
+3) Address	- <address> 
+---------------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<address>
+			H No 7-1-618/NG/302,
+Flat No 302, Aditya Enclave, Ameerpet, Hyderabad, Telangana, 500016
+Land Mark: Beside Ameerpet Metro Station.
+		</address>
+	</body>
+</html>
+
+4) Keyboard	- <kbd>
+-------------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		To copy press CTRL+C button 
+		<br>
+		To copy press <kbd>CTRL+C</kbd> button
+	</body>
+</html>
+
+5) Code		- <code> 
+------------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		<code>
+			void main()
+			{	
+				clrscr();
+				printf("Hello");
+				getch();
+			}
+		</code>
+	</body>
+</html>
+
+6) Strike       - <strike> or <s>
+------------------------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<p>
+			<strike>This is Database class</strike>
+		</p>
+
+		<p>
+			<s>This is Database class</s>
+		</p>
+
+			
+	
+	</body>
+</html>
+
+7) Mark		- <mark> 
+-------------------------
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+	</head>
+	<body>
+		
+		<p>
+			I am planning to <mark>quit</mark> the job
+		</p>	
+			
+	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
