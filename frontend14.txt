@@ -1,0 +1,605 @@
+
+CSS Grid layout
+===============
+The CSS grid layout module offers a grid-based layout system with rows and columns.
+
+Grid layout makes easier to design web pages without having a use of floats and positioning tag.
+
+A grid layout consists of a parent element , with one or more child elements.
+
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+			}	
+			.box1{background-color: #FFC312;}
+			.box2{background-color: #C4E538;}
+			.box3{background-color: #12CBC4;}
+			.box4{background-color: #FDA7DF;}
+			.box5{background-color: #ED4C67;}
+			.box6{background-color: #EE5A24;}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box3">Box3</div>
+			<div class="box4">Box4</div>
+			<div class="box5">Box5</div>
+			<div class="box6">Box6</div>
+		</div>	
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: grid;
+				grid-template-rows: 150px 150px;
+				grid-template-columns: 150px 150px 150px;
+			}	
+			.box1{background-color: #FFC312;}
+			.box2{background-color: #C4E538;}
+			.box3{background-color: #12CBC4;}
+			.box4{background-color: #FDA7DF;}
+			.box5{background-color: #ED4C67;}
+			.box6{background-color: #EE5A24;}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box3">Box3</div>
+			<div class="box4">Box4</div>
+			<div class="box5">Box5</div>
+			<div class="box6">Box6</div>
+		</div>	
+	</body>
+</html>
+
+ex:
+-----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: grid;
+				grid-template-rows: 150px 150px;
+				grid-template-columns: 150px 150px 1fr;
+			}	
+			.box1{background-color: #FFC312;}
+			.box2{background-color: #C4E538;}
+			.box3{background-color: #12CBC4;}
+			.box4{background-color: #FDA7DF;}
+			.box5{background-color: #ED4C67;}
+			.box6{background-color: #EE5A24;}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box3">Box3</div>
+			<div class="box4">Box4</div>
+			<div class="box5">Box5</div>
+			<div class="box6">Box6</div>
+		</div>	
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: grid;
+				grid-template-rows: 150px 150px;
+				grid-template-columns: 1fr 1fr 1fr;
+			}	
+			.box1{background-color: #FFC312;}
+			.box2{background-color: #C4E538;}
+			.box3{background-color: #12CBC4;}
+			.box4{background-color: #FDA7DF;}
+			.box5{background-color: #ED4C67;}
+			.box6{background-color: #EE5A24;}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box3">Box3</div>
+			<div class="box4">Box4</div>
+			<div class="box5">Box5</div>
+			<div class="box6">Box6</div>
+		</div>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: grid;
+				grid-template-rows: repeat(2, 150px);
+				grid-template-columns: repeat(3, 1fr);
+			}	
+			.box1{background-color: #FFC312;}
+			.box2{background-color: #C4E538;}
+			.box3{background-color: #12CBC4;}
+			.box4{background-color: #FDA7DF;}
+			.box5{background-color: #ED4C67;}
+			.box6{background-color: #EE5A24;}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box3">Box3</div>
+			<div class="box4">Box4</div>
+			<div class="box5">Box5</div>
+			<div class="box6">Box6</div>
+		</div>	
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: grid;
+				grid-template-rows: repeat(2, 150px);
+				grid-template-columns: repeat(3, 1fr);
+				grid-row-gap: 10px;
+				grid-column-gap: 10px;
+			}	
+			.box1{background-color: #FFC312;}
+			.box2{background-color: #C4E538;}
+			.box3{background-color: #12CBC4;}
+			.box4{background-color: #FDA7DF;}
+			.box5{background-color: #ED4C67;}
+			.box6{background-color: #EE5A24;}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box3">Box3</div>
+			<div class="box4">Box4</div>
+			<div class="box5">Box5</div>
+			<div class="box6">Box6</div>
+		</div>	
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.container
+			{
+				width:100%;
+				height:500px;
+				border:2px solid black;
+				display: grid;
+				grid-template-rows: repeat(2, 150px);
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 20px;
+			}	
+			.box1{background-color: #FFC312;}
+			.box2{background-color: #C4E538;}
+			.box3{background-color: #12CBC4;}
+			.box4{background-color: #FDA7DF;}
+			.box5{background-color: #ED4C67;}
+			.box6{background-color: #EE5A24;}
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1">Box1</div>
+			<div class="box2">Box2</div>
+			<div class="box3">Box3</div>
+			<div class="box4">Box4</div>
+			<div class="box5">Box5</div>
+			<div class="box6">Box6</div>
+		</div>	
+	</body>
+</html>
+
+
+CSS Google Fonts
+=================
+If we do not want to use any of the standard fonts in HTML, you can use Google Fonts.
+
+Google Fonts are free to use, and have more than 1000 fonts to choose.
+
+
+To use any google fonts we need to use below url.
+ex:
+	https://fonts.google.com/
+
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+		<style>
+			h1
+			{
+				text-align: center;
+				font-family: "Dancing Script", cursive;
+			}
+		</style>
+
+	</head>
+	<body>
+			<h1> Welcome to CSS class </h1>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+
+	
+
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+			h1
+			{
+				text-align: center;
+				font-family: "Dancing Script", cursive;
+			}
+		</style>
+
+	</head>
+	<body>
+			<h1> Welcome to CSS class </h1>
+	</body>
+</html>
+
+
+CSS FontAwesome Icons 
+========================
+Font Awesome gives you scalable vector icons that can instantly be customized.
+
+To use fontawesome icons we need to add below <link> inside <head> tag.
+ex:
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+			<font color="red" size="50px">
+				<i class="fa fa-heart"></i>
+			</font>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+			<font color="red" size="50px">
+				<i class="fa fa-home"></i>
+			</font>
+
+			<font color="blue" size="50px">
+				<i class="fa fa-phone"></i>
+			</font>
+
+			<font color="green" size="50px">
+				<i class="fa fa-envelope"></i>
+			</font>
+	</body>
+</html>
+
+ex:
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+			<h1 class="fa fa-facebook"></h1>
+			<h1 class="fa fa-youtube"></h1>
+			<h1 class="fa fa-whatsapp"></h1>
+			<h1 class="fa fa-instagram"></h1>
+			<h1 class="fa fa-twitter"></h1>
+	</body>
+</html>
+
+
+
+
+CSS animation property 
+======================
+CSS animation property is used to create animation on a web page.
+
+CSS animation property changes the behaviour of an element.
+
+We have following list of animation properties.
+
+ex:
+	animation-name 
+	animation-duration 
+	animation-iteration-time 
+	animation-delay
+	and etc.
+
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		<style>
+			.box
+			{
+				width:200px;
+				height:200px;
+				background-color: yellow;
+				animation-name: myAnim;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes myAnim
+			{
+				30%
+				{
+					background-color: blue;
+				}	
+				60%
+				{
+					background-color: red;
+				}
+				90%
+				{
+					background-color: green;
+				}
+			}
+		</style>	
+	</head>
+	<body>
+			<div class="box">
+				
+			</div>
+	</body>
+</html>
+
+ex:
+----
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MyPage!</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			.fa-bell
+			{
+				font-size:60px;
+				margin:50px 200px;
+				color: #FF00FF;
+				animation-name: swing;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes swing
+			{
+				40%
+				{
+					transform: rotate(45deg);
+				}	
+				80%
+				{
+					transform: rotate(-45deg);	
+				}
+			}
+		</style>
+
+	</head>
+	<body>
+			<div class="fa fa-bell"></div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,17 +2,35 @@
 <html>
 	<head>
 		<title>MyPage!</title>
-		<style>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-			body
+		<style>
+			.fa-bell
 			{
-				height:100vh;
-				background: radial-gradient(red,blue);
+				font-size:60px;
+				margin:50px 200px;
+				color: #FF00FF;
+				animation-name: swing;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
 			}
-		</style>	
+			@keyframes swing
+			{
+				40%
+				{
+					transform: rotate(45deg);
+				}	
+				80%
+				{
+					transform: rotate(-45deg);	
+				}
+			}
+		</style>
+
 	</head>
 	<body>
-			
+			<div class="fa fa-bell"></div>
 	</body>
 </html>
 
