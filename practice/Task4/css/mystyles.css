@@ -1,0 +1,119 @@
+*
+{
+	margin: 0;
+	padding:0;
+}
+body
+{
+	height: 100vh;
+	background: linear-gradient(red,yellow);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container
+{
+	width: 800px;
+	height:400px;
+	box-shadow:2px 2px 12px 6px #FFF;
+	box-sizing: border-box;
+}
+.container .box1
+{
+	width:400px;
+	height:400px;
+	box-sizing: border-box;
+	background-color: #dfe4ea;
+	float:left;
+}
+
+.container .box1 .circle
+{
+	width:80px;
+	height:80px;
+	background:transparent;
+	box-shadow:2px 2px 12px 6px #FFF;
+	margin:30px auto;
+	border-radius: 50%;
+}
+
+.container .box1 .circle .fa-user
+{
+	font-size:65px;
+	margin:3px 15px;
+}
+
+.container .box1 h2
+{
+	font-family: cursive;
+	text-align: center;
+}
+
+.container .box1 .form-style
+{
+	margin: 20px auto;
+}
+.container .box1 input[type="text"],input[type="password"]
+{
+	width:300px;
+	height:35px;
+	display: block;
+	margin:5px auto;
+	background: transparent;
+}
+.container .box1 input[placeholder]
+{
+	text-align: center;
+	font-size:18px;
+}
+
+
+.container .box1 input[type="submit"]
+{
+	width:100px;
+	padding:10px;
+	display: block;
+	margin:0 auto;
+	background-color: #dfe4ea;
+	cursor: pointer;
+	transition: 1s all linear;
+}
+.container .box1 input[type="submit"]:hover
+{
+	border-radius:15px;
+	border:2px solid #FFF;
+}
+
+
+.container .box2
+{
+	width:400px;
+	height:400px;
+	box-sizing: border-box;
+	background-color: #ED4C67;
+	float:right;
+}
+
+.container .box2 img
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
